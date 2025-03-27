@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    color: lightskyblue;
+ }
+
+.center {
+    text-align: center;
+    font-family: "Roboto Light", serif;
+}
+
+.disclaimer {
+    font-size: 24px;
+}
+
+.instructions {
+    font-size: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#accept {
+    font-size: 24px;
+    color: lightcoral;
+    cursor: pointer;
+}
+
+#noise {
+    cursor: pointer;
+}
+
+#demo {
+    cursor: pointer;
+}

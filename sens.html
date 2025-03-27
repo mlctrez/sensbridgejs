@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Sens</title>
+    <link rel="icon" type="image/png" href="img/logo-192.png">
+    <link rel="apple-touch-icon" href="img/logo-192.png">
+    <link rel="stylesheet" href="sens.css">
+</head>
+<body>
+
+<div class="center" id="warning">
+    <p class="disclaimer">Warning: Those with Photosensitive Epilepsy (PSE) should not view this site under any
+        circumstances.<br>
+        The site operator assumes no legal liability for injury caused to persons with PSE that have ignored this
+        warning.</p>
+    <p id="accept">Click this text acknowledge the warning after reading the instructions below.</p>
+    <br>
+    <p class="instructions"><b>Instructions</b></p>
+    <p class="instructions">The visualization works best with at least a 1920x1200 resolution.</p>
+    <p class="instructions">Allow the browser to access your microphone to visualize the music. <br><br><img
+            src="img/use_mic.png"></p>
+    <p class="instructions">Until the ambient noise filtering has been applied, the visualization will look a bit
+        off.</p>
+    <p class="instructions">Click <i>filter ambient noise</i> to capture the background ambient noise floor. This should
+        be done when no music or noise is present.</p>
+    <p class="instructions">The capture will begin 0.5 seconds later to to avoid picking up keyboard or mouse noise.</p>
+    <p class="instructions">The capture will be complete when the dots reach the top of the screen.</p>
+    <p class="instructions">The noise floor is saved in the browser local storage and will be reused when if
+        available.</p>
+    <p class="instructions">Start up the music and enjoy!</p>
+    <p class="instructions">Use the <i>demo audio</i> link for a demo. Reload the page to reset.</i></p>
+    <br>
+    <p>Inspired by <a href="https://twitter.com/lixielabs">𝕃𝕚𝕩𝕚𝕖 𝕃𝕒𝕓𝕤</a> <a href="https://sensorybridge.rocks/">SENSORY
+        BRIDGE</a>.</p>
+    <br>
+    <p>--- maybe some future enhancements? ---<br>
+        More visualization modes like sensory bridge.<br>
+        Tunable photons / boost / mood like sensory bridge.<br>
+        Horizontal and mobile view(s)?<br>
+    </p>
+</div>
+<div class="center" id="content" style="visibility: hidden">
+    <canvas id="visualizer" width="400" height="950"></canvas>
+    <br>
+    <span id="noise">filter ambient noise</span>
+    <br>
+    <span id="demo">demo audio</span>
+</div>
+</body>
+<script src="sens.js"></script>
+</html>
+
+
